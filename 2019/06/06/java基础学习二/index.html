@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <meta name="description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet();      //先用set中的迭代器存入我得到hashmap中的keyIt">
+  <meta name="description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet(); //先用set中的迭代器存入我得到hashmap中的keyIterato">
   
 
   
@@ -15,17 +15,17 @@
   
   <title>java基础学习二 | 唐坤的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet();      //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator();        //注意应为得到的key’是整形最好">
+  <meta name="description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet(); //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator(); //注意应为得到的key’是整形最好加个泛型，我在这里郁闷了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java基础学习二">
 <meta property="og:url" content="http://yoursite.com/2019/06/06/java基础学习二/index.html">
 <meta property="og:site_name" content="唐坤的博客">
-<meta property="og:description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet();      //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator();        //注意应为得到的key’是整形最好">
+<meta property="og:description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet(); //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator(); //注意应为得到的key’是整形最好加个泛型，我在这里郁闷了">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-06T13:33:06.270Z">
+<meta property="og:updated_time" content="2019-06-06T13:45:24.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础学习二">
-<meta name="twitter:description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet();      //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator();        //注意应为得到的key’是整形最好">
+<meta name="twitter:description" content="HashMap&amp;lt;Integer,student&amp;gt;map=new HashMap&amp;lt;Integer, student&amp;gt;(); //我定义的键是int类型，值是自定义类Setser=map.keySet(); //先用set中的迭代器存入我得到hashmap中的keyIterator l=ser.iterator(); //注意应为得到的key’是整形最好加个泛型，我在这里郁闷了">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -81,15 +81,13 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/06/06/java基础学习二/" data-id="cjwkpg8v60002dkvhslje4tj2" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/06/06/java基础学习二/" data-id="cjwkprxx6000180vhkya7uteh" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p><code>HashMap&lt;Integer,student&gt;map=new HashMap&lt;Integer, student&gt;();</code> //我定义的键是int类型，值是自定义类<br><code>Setser=map.keySet();</code>      //先用set中的迭代器存入我得到hashmap中的key<br><code>Iterator l=ser.iterator();</code>        //注意应为得到的key’是整形最好加个泛型，我在这里郁闷了几天。。<br><code>while(l.hasNext())</code>                   //判断是否有元素<br><code>{
-Integer ab=l.next();          //用int的封装类接受到我的key    
-student a=map.get(ab);</code>        //然后用得到的key在map的get里面去得到相对应的value。从而<br>输出</p>
+        <p><code>HashMap&lt;Integer,student&gt;map=new HashMap&lt;Integer, student&gt;();</code> //我定义的键是int类型，值是自定义类<br><code>Setser=map.keySet();</code> //先用set中的迭代器存入我得到hashmap中的key<br><code>Iterator l=ser.iterator();</code> //注意应为得到的key’是整形最好加个泛型，我在这里郁闷了几天。。<br><code>while(l.hasNext())</code> //判断是否有元素<br><code>{ Integer ab=l.next(); //用int的封装类接受到我的key student a=map.get(ab);</code> //然后用得到的key在map的get里面去得到相对应的value。从而<br>输出</p>
 <h2 id="System-out-println-ab-quot-“-a-name-”-quot-a-ages）"><a href="#System-out-println-ab-quot-“-a-name-”-quot-a-ages）" class="headerlink" title="System.out.println(ab+&quot; “+a.name+” &quot;+a.ages）"></a><code>System.out.println(ab+&quot; “+a.name+” &quot;+a.ages）</code></h2>
       
     </div><!-- .entry-content -->
