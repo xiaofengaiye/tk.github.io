@@ -103,17 +103,20 @@
 
 
 
-  <meta name="description" content="学习数据库 因为我已经搭建好了数据库，就不弄了，以后重新搭建的话，再出blog 基本的sql语句 创建数据库 create  database  数据库的名字 ; 查看所有数据库 show databases; 使用数据库 use 数据库名字; 查看所有表 show tables; 描述表的结构 desc table 表的名字; 创建表 create table 表的名字（ ID int(11)">
+  <meta name="description" content="外键约束–班级 12345create table classes(id int  primary key,name varchar(20))  –学生表 1234567create table students（id int primary key,name varchar(20),class_id （int）,foreign key(class_id) references classes (">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习数据库">
-<meta property="og:url" content="http://www.tangkungblog.cn/2019/06/11/学习数据库/index.html">
+<meta property="og:title" content="学习数据库（二）">
+<meta property="og:url" content="http://www.tangkungblog.cn/2019/06/12/学习数据库（二）/index.html">
 <meta property="og:site_name" content="Brigitte">
-<meta property="og:description" content="学习数据库 因为我已经搭建好了数据库，就不弄了，以后重新搭建的话，再出blog 基本的sql语句 创建数据库 create  database  数据库的名字 ; 查看所有数据库 show databases; 使用数据库 use 数据库名字; 查看所有表 show tables; 描述表的结构 desc table 表的名字; 创建表 create table 表的名字（ ID int(11)">
+<meta property="og:description" content="外键约束–班级 12345create table classes(id int  primary key,name varchar(20))  –学生表 1234567create table students（id int primary key,name varchar(20),class_id （int）,foreign key(class_id) references classes (">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-11T14:29:19.455Z">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00f34ec592e40190.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00f36cd154e48396.png">
+<meta property="og:updated_time" content="2019-06-12T12:45:47.585Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习数据库">
-<meta name="twitter:description" content="学习数据库 因为我已经搭建好了数据库，就不弄了，以后重新搭建的话，再出blog 基本的sql语句 创建数据库 create  database  数据库的名字 ; 查看所有数据库 show databases; 使用数据库 use 数据库名字; 查看所有表 show tables; 描述表的结构 desc table 表的名字; 创建表 create table 表的名字（ ID int(11)">
+<meta name="twitter:title" content="学习数据库（二）">
+<meta name="twitter:description" content="外键约束–班级 12345create table classes(id int  primary key,name varchar(20))  –学生表 1234567create table students（id int primary key,name varchar(20),class_id （int）,foreign key(class_id) references classes (">
+<meta name="twitter:image" content="https://i.loli.net/2019/06/12/5d00f34ec592e40190.png">
 
 
 
@@ -121,7 +124,7 @@
 
   
   
-  <link rel="canonical" href="http://www.tangkungblog.cn/2019/06/11/学习数据库/">
+  <link rel="canonical" href="http://www.tangkungblog.cn/2019/06/12/学习数据库（二）/">
 
 
 
@@ -131,7 +134,7 @@
   };
 </script>
 
-  <title>学习数据库 | Brigitte</title>
+  <title>学习数据库（二） | Brigitte</title>
   
 
 
@@ -369,7 +372,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.tangkungblog.cn/2019/06/11/学习数据库/">
+    <link itemprop="mainEntityOfPage" href="http://www.tangkungblog.cn/2019/06/12/学习数据库（二）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="唐坤">
@@ -386,7 +389,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学习数据库
+          <h1 class="post-title" itemprop="name headline">学习数据库（二）
 
               
             
@@ -412,7 +415,7 @@
                 
               
 
-              <time title="创建时间：2019-06-11 15:59:08 / 修改时间：22:29:19" itemprop="dateCreated datePublished" datetime="2019-06-11T15:59:08+08:00">2019-06-11</time>
+              <time title="创建时间：2019-06-12 19:37:14 / 修改时间：20:45:47" itemprop="dateCreated datePublished" datetime="2019-06-12T19:37:14+08:00">2019-06-12</time>
             
 
             
@@ -435,8 +438,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/06/11/学习数据库/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/11/学习数据库/" itemprop="commentCount"></span>
+                <a href="/2019/06/12/学习数据库（二）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/12/学习数据库（二）/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -471,309 +474,84 @@
       
 
       
-        <p>学习数据库</p>
-<p>因为我已经搭建好了数据库，就不弄了，以后重新搭建的话，再出blog</p>
-<p>基本的sql语句</p>
-<p>创建数据库</p>
-<p>create  database  数据库的名字 ;</p>
-<p>查看所有数据库</p>
-<p>show databases;</p>
-<p>使用数据库</p>
-<p>use 数据库名字;</p>
-<p>查看所有表</p>
-<p>show tables;</p>
-<p>描述表的结构</p>
-<p>desc table 表的名字;</p>
-<p>创建表</p>
-<p>create table 表的名字（</p>
-<p>ID int(11)  primary key ,</p>
-<p>name varchar(11),</p>
-<p>time date(yyyymmdd)</p>
-<p>）</p>
-<p>上面是创建表，primary key则表明ID为主键，可以通过主键来查询信息，主键不能为空</p>
-<p>还有联合主键 primary key（id, name）;则表明id与名字都为主键，当时在数据库添加数据的时候，小伙伴们会惊奇的发现如果我们添加的数据名字一样也可以添加进去，不是说主键唯一吗？联合主键就是id与name不能相同，假如插入了id=1，name=‘李四’，下一个插入了id=2，name=‘李四’，这样是可以插入的，但是如果还是上一条数据插入则不行。</p>
-<p>一般来说主键必须包含唯一的值，主键列不能包含NULL值，每个表都有一个主键，并且每个表只能由一个主键，联合主键中任何一个值都不能等于null</p>
-<p>不理解也没关系，下一个博客我会专门出一个primary key的</p>
+        <h1 id="外键约束"><a href="#外键约束" class="headerlink" title="外键约束"></a>外键约束</h1><p>–班级</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> classes</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span>  primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>–学生表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> students</span><br><span class="line">（</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">class_id （<span class="built_in">int</span>）,</span><br><span class="line"><span class="keyword">foreign</span> <span class="keyword">key</span>(class_id) <span class="keyword">references</span> classes (<span class="keyword">id</span>)   //该为外键约束，外键就是另外一个表的主键 <span class="keyword">references</span> 意思就是涉及到classes这个表</span><br><span class="line">）</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> classes <span class="keyword">value</span>(<span class="number">1</span>,<span class="string">'一班'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> classes <span class="keyword">value</span>(<span class="number">2</span>,<span class="string">'二班'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> classes <span class="keyword">value</span>(<span class="number">3</span>,<span class="string">'三班'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> classes <span class="keyword">value</span>(<span class="number">4</span>,<span class="string">'四班'</span>);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2019/06/12/5d00f34ec592e40190.png" alt=")OO_G)O3ZLZ(X{I_WMYB5MT.png"></p>
+<p>向students插入数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> students <span class="keyword">value</span>(<span class="number">1001</span>,‘张三’,<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> students <span class="keyword">value</span>(<span class="number">1002</span>,‘张三’,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> students <span class="keyword">value</span>(<span class="number">1003</span>,‘张三’,<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> students <span class="keyword">value</span>(<span class="number">1004</span>,‘张三’,<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
+
+<h6 id="假如我这样插入时"><a href="#假如我这样插入时" class="headerlink" title="假如我这样插入时"></a>假如我这样插入时</h6><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> students <span class="keyword">value</span>（<span class="number">1005</span>，‘李四’，<span class="number">5</span>）;</span><br></pre></td></tr></table></figure>
+
+<p>![A]L5_$XP~~49RDXT`8Y3302.png](<a href="https://i.loli.net/2019/06/12/5d00f3066c28922004.png" target="_blank" rel="noopener">https://i.loli.net/2019/06/12/5d00f3066c28922004.png</a>)</p>
+<p>这是因为  5，5代表的是外键，而classes里面没有5所以插入失败</p>
+<p>而且当父表被引用的时候是不可以被修改的</p>
+<p>所以得出以下结论</p>
+<p>–1、主表 （父表）classes中没有的数据值，在副表中，是不可以被使用</p>
+<p>–2、主表中的记录被副表引用时，是不可以被删除的</p>
+<p>例如</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> classes <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">1</span>；</span><br></pre></td></tr></table></figure>
+
+<p>![AK25_$K2U(C<a href="https://i.loli.net/2019/06/12/5d00f2d8a9e3931531.png" target="_blank" rel="noopener">~PRAOWCZB`H.png</a></p>
+<h1 id="数据库的三大设计范式"><a href="#数据库的三大设计范式" class="headerlink" title="数据库的三大设计范式"></a>数据库的三大设计范式</h1><h1 id="–1、第一范式"><a href="#–1、第一范式" class="headerlink" title="–1、第一范式"></a>–1、第一范式</h1><p>–INF</p>
+<p>数据表中的所有字段都是不可分割的原子值？</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> student2</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">address <span class="built_in">varchar</span>(<span class="number">20</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">1</span>,<span class="string">'张三'</span>，<span class="string">'中国四川省成都市武侯区武侯大道100号'</span>)；</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">2</span>,<span class="string">'李四'</span>，<span class="string">'中国四川省成都市武侯区武侯大道200号'</span>)；</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">3</span>,<span class="string">'王五'</span>，<span class="string">'中国四川省成都市武侯区武侯大道90号'</span>)；</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2019/06/12/5d00f36cd154e48396.png" alt="E)DWY[_S(7II_G{_WM3R]15.png"></p>
+<p>–字段值还可以继续拆分，就不满足第一范式</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> student2</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">country <span class="built_in">varchar</span>(<span class="number">30</span>),</span><br><span class="line">province <span class="built_in">varchar</span>(<span class="number">30</span>),</span><br><span class="line">city <span class="built_in">varchar</span>(<span class="number">30</span>),</span><br><span class="line">detail <span class="built_in">varchar</span> (<span class="number">30</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">1</span>,<span class="string">'张三'</span>，<span class="string">'中国'</span>,<span class="string">'四川省'</span>,<span class="string">'成都市'</span>,<span class="string">'武侯区'</span>,<span class="string">'武侯大道100号'</span>)；</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">2</span>,<span class="string">'李四'</span>，<span class="string">'中国'</span>,<span class="string">'四川省'</span>,<span class="string">'成都市'</span>,<span class="string">'武侯区'</span>,<span class="string">'武侯大道200号'</span>)；</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">value</span>(<span class="number">3</span>,<span class="string">'王五'</span>，<span class="string">'中国'</span>,<span class="string">'四川省'</span>,<span class="string">'成都市'</span>,<span class="string">'武侯区'</span>,<span class="string">'武侯大道90号'</span>)；</span><br></pre></td></tr></table></figure>
+
+<p>![LN}`4E@GPO8H]_Q]G2K2NTO.png](<a href="https://i.loli.net/2019/06/12/5d00f3ecb917653801.png" target="_blank" rel="noopener">https://i.loli.net/2019/06/12/5d00f3ecb917653801.png</a>)</p>
+<p>–范式，设计的越详细，对于某些实际操作可能更好，但不一定都是最好。</p>
+<p>第一范式就是拆字段</p>
+<h1 id="–2、第二范式"><a href="#–2、第二范式" class="headerlink" title="–2、第二范式"></a>–2、第二范式</h1><p>–必须是满足第一范式的前提下，第二范式要求，除主键外的每一个列都必须完全依赖于主键。</p>
+<p>–如果要出现不完全依赖，只可能在联合主键情况下。</p>
+<p>–订单表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> myorder</span><br><span class="line">(</span><br><span class="line">product_id <span class="built_in">int</span>,</span><br><span class="line">customer_id <span class="built_in">int</span>,</span><br><span class="line">product_name <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">customer_name <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">primary <span class="keyword">key</span>(product_id,customer_id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>– 问题</p>
+<p>–除主键以外的其他列，只依赖主键的部分字段</p>
+<p>–拆表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> myorder</span><br><span class="line">(</span><br><span class="line">oredr_id <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line">product_id <span class="built_in">int</span>,</span><br><span class="line">customer_id <span class="built_in">int</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> product</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> customer</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>产品名字依赖于product里面的主键，而用户名字依赖于customer里面的名字，</p>
+<p>而第一个表里面的两个id依赖于myorder的主键，你们会不会联想起外键了？</p>
+<p>–分成三个表满足了第二范式</p>
+<h1 id="–3、第三范式"><a href="#–3、第三范式" class="headerlink" title="–3、第三范式"></a>–3、第三范式</h1><p>–3NF</p>
+<p>–必须满足第二范式，除开主键列的其他列之间不能有传递依赖关系</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> myorder</span><br><span class="line">(</span><br><span class="line">oredr_id <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line">product_id <span class="built_in">int</span>,</span><br><span class="line">customer_id <span class="built_in">int</span>，</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> customer</span><br><span class="line">(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line"> phone <span class="built_in">varchar</span>(<span class="number">15</span>)   </span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h1 id="插入语句"><a href="#插入语句" class="headerlink" title="插入语句"></a>插入语句</h1><p>insert into 表的名字 value（对应的字段）；</p>
-<p>我们也可以指定所要插入数据的列：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name (列<span class="number">1</span>, 列<span class="number">2</span>,...) <span class="keyword">VALUES</span> (值<span class="number">1</span>, 值<span class="number">2</span>,....)</span><br></pre></td></tr></table></figure>
+<h6 id="ex："><a href="#ex：" class="headerlink" title="ex："></a>ex：</h6><h6 id="数据类型：decimal"><a href="#数据类型：decimal" class="headerlink" title="数据类型：decimal"></a>数据类型：decimal</h6><p>MySQL <code>DECIMAL</code>数据类型用于在数据库中存储精确的数值。</p>
+<p>例如语法</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">：column_name DECIMAL(P,D)</span><br></pre></td></tr></table></figure>
 
-<h2 id="插入新的行"><a href="#插入新的行" class="headerlink" title="插入新的行"></a>插入新的行</h2><h3 id="“Persons”-表："><a href="#“Persons”-表：" class="headerlink" title="“Persons” 表："></a>“Persons” 表：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-<td align="left">Changan Street</td>
-<td align="left">Beijing</td>
-</tr>
-</tbody></table>
-<h3 id="SQL-语句："><a href="#SQL-语句：" class="headerlink" title="SQL 语句："></a>SQL 语句：</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> Persons <span class="keyword">VALUES</span> (<span class="string">'Gates'</span>, <span class="string">'Bill'</span>, <span class="string">'Xuanwumen 10'</span>, <span class="string">'Beijing'</span>)</span><br></pre></td></tr></table></figure>
+<p>其中P表示的是有效数字的位数，D表示是小数的位数，D小于或等于P。</p>
+<p>理解可看下面代码：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> decimal_test(</span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span> auto_increment PRIMARY <span class="keyword">key</span>,</span><br><span class="line">score <span class="built_in">decimal</span>(<span class="number">5</span>,<span class="number">2</span>)  <span class="comment">-- 取值范围是 **-999.99 到 999.99**</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-<td align="left">Changan Street</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-</tbody></table>
-<h2 id="在指定的列中插入数据"><a href="#在指定的列中插入数据" class="headerlink" title="在指定的列中插入数据"></a>在指定的列中插入数据</h2><h3 id="“Persons”-表：-1"><a href="#“Persons”-表：-1" class="headerlink" title="“Persons” 表："></a>“Persons” 表：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-<td align="left">Changan Street</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-</tbody></table>
-<h3 id="SQL-语句：-1"><a href="#SQL-语句：-1" class="headerlink" title="SQL 语句："></a>SQL 语句：</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> Persons (LastName, Address) <span class="keyword">VALUES</span> (<span class="string">'Wilson'</span>, <span class="string">'Champs-Elysees'</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="结果：-1"><a href="#结果：-1" class="headerlink" title="结果："></a>结果：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-<td align="left">Changan Street</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Wilson</td>
-<td align="left"></td>
-<td align="left">Champs-Elysees</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="查询语句"><a href="#查询语句" class="headerlink" title="查询语句"></a>查询语句</h1><p>select *from 表的名字；（这是查全部的信息）</p>
-<p>select 列的名称 from 表名称  （查单列）</p>
-<p>如需获取名为 “LastName” 和 “FirstName” 的列的内容（从名为 “Persons” 的数据库表），请使用类似这样的 SELECT 语句“</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> LastName,FirstName <span class="keyword">FROM</span> Persons</span><br></pre></td></tr></table></figure>
-
-<h3 id="“Persons”-表"><a href="#“Persons”-表" class="headerlink" title="“Persons” 表:"></a>“Persons” 表:</h3><table>
-<thead>
-<tr>
-<th align="left">Id</th>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">1</td>
-<td align="left">Adams</td>
-<td align="left">John</td>
-<td align="left">Oxford Street</td>
-<td align="left">London</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left">Bush</td>
-<td align="left">George</td>
-<td align="left">Fifth Avenue</td>
-<td align="left">New York</td>
-</tr>
-<tr>
-<td align="left">3</td>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-<td align="left">Changan Street</td>
-<td align="left">Beijing</td>
-</tr>
-</tbody></table>
-<h3 id="结果：-2"><a href="#结果：-2" class="headerlink" title="结果："></a>结果：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Adams</td>
-<td align="left">John</td>
-</tr>
-<tr>
-<td align="left">Bush</td>
-<td align="left">George</td>
-</tr>
-<tr>
-<td align="left">Carter</td>
-<td align="left">Thomas</td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="更新语句"><a href="#更新语句" class="headerlink" title="更新语句"></a>更新语句</h1><p>update 表名称 set 列名称=新值 where 列名称=某值</p>
-<p>Update 语句用于修改表中的数据</p>
-<h2 id="Person"><a href="#Person" class="headerlink" title="Person:"></a>Person:</h2><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Wilson</td>
-<td align="left"></td>
-<td align="left">Champs-Elysees</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<p>我们为 lastname 是 “Wilson” 的人添加 firstname：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> Person <span class="keyword">SET</span> FirstName = <span class="string">'Fred'</span> <span class="keyword">WHERE</span> LastName = <span class="string">'Wilson'</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果：-3"><a href="#结果：-3" class="headerlink" title="结果："></a>结果：</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Wilson</td>
-<td align="left">Fred</td>
-<td align="left">Champs-Elysees</td>
-<td align="left"></td>
-</tr>
-</tbody></table>
-<hr>
-<h1 id="DELETE-语句"><a href="#DELETE-语句" class="headerlink" title="DELETE 语句"></a>DELETE 语句</h1><p>DELETE 语句用于删除表中的行。</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> 表名称 <span class="keyword">WHERE</span> 列名称 = 值</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Person-1"><a href="#Person-1" class="headerlink" title="Person:"></a>Person:</h2><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-<tr>
-<td align="left">Wilson</td>
-<td align="left">Fred</td>
-<td align="left">Zhongshan 23</td>
-<td align="left">Nanjing</td>
-</tr>
-</tbody></table>
-<h2 id="删除某行"><a href="#删除某行" class="headerlink" title="删除某行"></a>删除某行</h2><p>“Fred Wilson” 会被删除：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> Person <span class="keyword">WHERE</span> LastName = <span class="string">'Wilson'</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="结果"><a href="#结果" class="headerlink" title="结果:"></a>结果:</h3><table>
-<thead>
-<tr>
-<th align="left">LastName</th>
-<th align="left">FirstName</th>
-<th align="left">Address</th>
-<th align="left">City</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">Gates</td>
-<td align="left">Bill</td>
-<td align="left">Xuanwumen 10</td>
-<td align="left">Beijing</td>
-</tr>
-</tbody></table>
-<h2 id="删除所有行"><a href="#删除所有行" class="headerlink" title="删除所有行"></a>删除所有行</h2><p>可以在不删除表的情况下删除所有的行。这意味着表的结构、属性和索引都是完整的：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
-
-<p>或者：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> * <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
-
-<h1 id="修改表结构"><a href="#修改表结构" class="headerlink" title="修改表结构"></a>修改表结构</h1><p>增加主键约束</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span>  person  <span class="keyword">add</span> primary <span class="keyword">key</span>（<span class="keyword">id</span>）</span><br></pre></td></tr></table></figure>
-
-<p>删除主键约束</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> person <span class="keyword">drop</span> primary <span class="keyword">key</span>；</span><br></pre></td></tr></table></figure>
-
-<p>修改主键约束</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> person <span class="keyword">modify</span> <span class="keyword">id</span> <span class="built_in">int</span> primary <span class="keyword">key</span> ；</span><br></pre></td></tr></table></figure>
-
-<p>如果被unique修饰的话   则不能相同</p>
-<p>如果是被unique修饰的联合主键  则两个只要和以前插入的数据不同就行了</p>
-<h4 id="删除unique修饰"><a href="#删除unique修饰" class="headerlink" title="删除unique修饰"></a>删除unique修饰</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> person <span class="keyword">drop</span> <span class="keyword">index</span> <span class="keyword">name</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="给字段添加unique"><a href="#给字段添加unique" class="headerlink" title="给字段添加unique"></a>给字段添加unique</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> person <span class="keyword">modify</span> <span class="keyword">name</span> <span class="built_in">varchar</span>（<span class="number">20</span>） <span class="keyword">unique</span>；</span><br></pre></td></tr></table></figure>
-
-<h3 id="非空约束"><a href="#非空约束" class="headerlink" title="非空约束"></a>非空约束</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span>  <span class="keyword">table</span> user9</span><br><span class="line"></span><br><span class="line">（</span><br><span class="line"></span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span>,</span><br><span class="line"></span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="literal">null</span></span><br><span class="line"></span><br><span class="line">）;</span><br></pre></td></tr></table></figure>
-
-<h3 id="默认约束"><a href="#默认约束" class="headerlink" title="默认约束"></a>默认约束</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span>  <span class="keyword">table</span> user9</span><br><span class="line"></span><br><span class="line">（</span><br><span class="line"></span><br><span class="line"><span class="keyword">id</span> <span class="built_in">int</span>,</span><br><span class="line"><span class="keyword">name</span> <span class="built_in">varchar</span>（<span class="number">20</span>），</span><br><span class="line">age <span class="built_in">int</span> defalut <span class="number">10</span></span><br><span class="line">）;</span><br></pre></td></tr></table></figure>
-
-<p>如果没传入数据，则age默认10，传了值就不会使用默认值</p>
+<p>– 整数的位数必须小于等于m-d，不然报错。小数的位数可以大于d位。多出d位时会做四舍五入，截取到d位。<br>– 以上均不包括小数点、符号的位数。数字的总长度是m位，保存后的小数位最多是d位。如果保存后是整数，小数位不会补0。</p>
+<h6 id="ex：-1"><a href="#ex：-1" class="headerlink" title="ex："></a>ex：</h6><h6 id="数据类型：datetime"><a href="#数据类型：datetime" class="headerlink" title="数据类型：datetime"></a>数据类型：datetime</h6><p>①date类型可用于需要一个日期值而不需要时间部分时；</p>
+<p>②datetime类型:可用于需要同时包含日期和时间信息的值。</p>
+<p>区别2：</p>
+<p>①date：MySQL 以 ‘YYYY-MM-DD’ 格式检索与显示date值；</p>
+<p>②datetime:MySQL 以 ‘YYYY-MM-DD HH:mm:ss’格式检索与显示 DATETIME 类型。</p>
+<p>– 整数的位数必须小于等于m-d，不然报错。小数的位数可以大于d位。多出d位时会做四舍五入，截取到d位。<br>– 以上均不包括小数点、符号的位数。数字的总长度是m位，保存后的小数位最多是d位。如果保存后是整数，小数位不会补0</p>
 
       
     </div>
@@ -848,8 +626,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/09/springboot-整合mybatis/" rel="next" title="springboot-整合mybatis">
-                <i class="fa fa-chevron-left"></i> springboot-整合mybatis
+              <a href="/2019/06/11/springboot整合servlet/" rel="next" title="springboot整合servlet">
+                <i class="fa fa-chevron-left"></i> springboot整合servlet
               </a>
             
           </div>
@@ -857,10 +635,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/11/springboot整合servlet/" rel="prev" title="springboot整合servlet">
-                springboot整合servlet <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -992,7 +766,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#插入语句"><span class="nav-number">1.</span> <span class="nav-text">插入语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#插入新的行"><span class="nav-number">1.1.</span> <span class="nav-text">插入新的行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“Persons”-表："><span class="nav-number">1.1.1.</span> <span class="nav-text">“Persons” 表：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL-语句："><span class="nav-number">1.1.2.</span> <span class="nav-text">SQL 语句：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果："><span class="nav-number">1.1.3.</span> <span class="nav-text">结果：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在指定的列中插入数据"><span class="nav-number">1.2.</span> <span class="nav-text">在指定的列中插入数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“Persons”-表：-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">“Persons” 表：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL-语句：-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">SQL 语句：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果：-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">结果：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询语句"><span class="nav-number">2.</span> <span class="nav-text">查询语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#“Persons”-表"><span class="nav-number">2.0.1.</span> <span class="nav-text">“Persons” 表:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果：-2"><span class="nav-number">2.0.2.</span> <span class="nav-text">结果：</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#更新语句"><span class="nav-number">3.</span> <span class="nav-text">更新语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Person"><span class="nav-number">3.1.</span> <span class="nav-text">Person:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#结果：-3"><span class="nav-number">3.1.1.</span> <span class="nav-text">结果：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DELETE-语句"><span class="nav-number">4.</span> <span class="nav-text">DELETE 语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">4.0.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Person-1"><span class="nav-number">4.1.</span> <span class="nav-text">Person:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除某行"><span class="nav-number">4.2.</span> <span class="nav-text">删除某行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#结果"><span class="nav-number">4.2.1.</span> <span class="nav-text">结果:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除所有行"><span class="nav-number">4.3.</span> <span class="nav-text">删除所有行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改表结构"><span class="nav-number">5.</span> <span class="nav-text">修改表结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#删除unique修饰"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">删除unique修饰</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#给字段添加unique"><span class="nav-number">5.0.1.</span> <span class="nav-text">给字段添加unique</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非空约束"><span class="nav-number">5.0.2.</span> <span class="nav-text">非空约束</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认约束"><span class="nav-number">5.0.3.</span> <span class="nav-text">默认约束</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#外键约束"><span class="nav-number">1.</span> <span class="nav-text">外键约束</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#假如我这样插入时"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">假如我这样插入时</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库的三大设计范式"><span class="nav-number">2.</span> <span class="nav-text">数据库的三大设计范式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#–1、第一范式"><span class="nav-number">3.</span> <span class="nav-text">–1、第一范式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#–2、第二范式"><span class="nav-number">4.</span> <span class="nav-text">–2、第二范式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#–3、第三范式"><span class="nav-number">5.</span> <span class="nav-text">–3、第三范式</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#ex："><span class="nav-number">5.0.0.0.0.1.</span> <span class="nav-text">ex：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#数据类型：decimal"><span class="nav-number">5.0.0.0.0.2.</span> <span class="nav-text">数据类型：decimal</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#ex：-1"><span class="nav-number">5.0.0.0.0.3.</span> <span class="nav-text">ex：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#数据类型：datetime"><span class="nav-number">5.0.0.0.0.4.</span> <span class="nav-text">数据类型：datetime</span></a></li></ol></li></div>
             
 
           </div>
