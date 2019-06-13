@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="Brigitte">
 <meta property="og:description" content="排重查询教师所有单位即不重复的depart列 1select distinct depart from teacher  这样出来的结果就不是重复的结果了 查询区间如果查询的东西在一个区间 between 。。。and  。。。。 123select * from score where degree between 60 and 80;或者select * from score where de">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-13T01:04:01.880Z">
+<meta property="og:updated_time" content="2019-06-13T01:15:58.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习数据库（三）">
 <meta name="twitter:description" content="排重查询教师所有单位即不重复的depart列 1select distinct depart from teacher  这样出来的结果就不是重复的结果了 查询区间如果查询的东西在一个区间 between 。。。and  。。。。 123select * from score where degree between 60 and 80;或者select * from score where de">
@@ -412,7 +412,7 @@
                 
               
 
-              <time title="创建时间：2019-06-13 08:34:42 / 修改时间：09:04:01" itemprop="dateCreated datePublished" datetime="2019-06-13T08:34:42+08:00">2019-06-13</time>
+              <time title="创建时间：2019-06-13 08:34:42 / 修改时间：09:15:58" itemprop="dateCreated datePublished" datetime="2019-06-13T08:34:42+08:00">2019-06-13</time>
             
 
             
@@ -494,10 +494,10 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">count</span>(*) <span class="keyword">from</span> student <span class="keyword">where</span> <span class="keyword">class</span>=<span class="string">'95031'</span>；</span><br></pre></td></tr></table></figure>
 
 <h2 id="查询最高分"><a href="#查询最高分" class="headerlink" title="查询最高分"></a>查询最高分</h2><p>我这里列子查询son，con的最高分</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> son，cno <span class="keyword">from</span> score <span class="keyword">where</span> degree=（<span class="keyword">select</span> <span class="keyword">max</span> degree <span class="keyword">from</span> score）；</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> son，cno <span class="keyword">from</span> score <span class="keyword">where</span> degree=（<span class="keyword">select</span> <span class="keyword">max</span> （degree） <span class="keyword">from</span> score）；</span><br></pre></td></tr></table></figure>
 
 <p>规范的步骤</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">max</span> degree <span class="keyword">from</span> score；</span><br><span class="line"><span class="keyword">select</span> son，cno <span class="keyword">from</span> score <span class="keyword">where</span> degree=（<span class="keyword">select</span> <span class="keyword">max</span> degree <span class="keyword">from</span> score）；</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">max</span> （degree） <span class="keyword">from</span> score；</span><br><span class="line"><span class="keyword">select</span> son，cno <span class="keyword">from</span> score <span class="keyword">where</span> degree=（<span class="keyword">select</span> <span class="keyword">max</span> （degree） <span class="keyword">from</span> score）；</span><br></pre></td></tr></table></figure>
 
 <h2 id="排序查询最高分"><a href="#排序查询最高分" class="headerlink" title="排序查询最高分"></a>排序查询最高分</h2><p>假如有同样的最高分，那么这个查询就有点缺陷了</p>
 <p>limit 第一个数字表示从多少开始，第二个数字表示查多少条</p>
