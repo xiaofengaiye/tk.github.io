@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[springboot定时任务二种（一）@Scheduled]]></title>
     <url>%2F2019%2F07%2F25%2Fspringboot%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1%E4%B9%8BScheduled%2F</url>
-    <content type="text"><![CDATA[先导入依赖 1234&lt;dependency&gt;&lt;groupId&gt;org.springframework&lt;/groupId&gt;&lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;&lt;/dependency&gt; 然后创建定时任务类 123456789@Componentpublic class ScheduledDemo&#123; @Scheduled(cron="0/2 * * * * ?") public void scheduledMethod() &#123; System.out.println("定时器被触发")； &#125;&#125; 然后在启动类中加上@EnableScheduling 就可以了]]></content>
+    <content type="text"><![CDATA[先导入依赖 1234&lt;dependency&gt;&lt;groupId&gt;org.springframework&lt;/groupId&gt;&lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;&lt;/dependency&gt; 然后创建定时任务类 123456789@Componentpublic class ScheduledDemo&#123; @Scheduled(cron="0/2 * * * * ?") public void scheduledMethod() &#123; System.out.println("定时器被触发")； &#125;&#125; 然后在启动类中加上@EnableScheduling 就可以了 关于cron表达式 ： 0/2代表每隔2秒 0-2则代表这个区间断 *代表每分钟吖，每小时呀等到 ？通常指的是无意义的值 L代表last 但是意义不同，L表示改月份或者日期的最后一天 W指的是离该月15最近的工作日 LW组合代表当月最后一个工作日 如图]]></content>
   </entry>
   <entry>
     <title><![CDATA[websocker]]></title>
