@@ -103,17 +103,17 @@
 
 
 
-  <meta name="description" content="引入依赖 1234567891011121314151617&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;&amp;l">
+  <meta name="description" content="SSM整合拦截器123456789101112131415161718192021public class myInterceptor extends HandlerInterceptorAdapter &amp;#123;    Logger logger=Logger.getLogger(myInterceptor.class);    @Override    public boolean preH">
 <meta property="og:type" content="article">
-<meta property="og:title" content="定时任务（二）springboot整合Quartz的使用">
-<meta property="og:url" content="http://www.tangkungblog.cn/2019/07/25/定时任务（二）Quartz的使用/index.html">
+<meta property="og:title" content="Brigitte">
+<meta property="og:url" content="http://www.tangkungblog.cn/2020/04/14/整合ssm中拦截器/index.html">
 <meta property="og:site_name" content="Brigitte">
-<meta property="og:description" content="引入依赖 1234567891011121314151617&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;&amp;l">
+<meta property="og:description" content="SSM整合拦截器123456789101112131415161718192021public class myInterceptor extends HandlerInterceptorAdapter &amp;#123;    Logger logger=Logger.getLogger(myInterceptor.class);    @Override    public boolean preH">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-25T08:30:50.718Z">
+<meta property="og:updated_time" content="2020-04-14T01:35:11.904Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="定时任务（二）springboot整合Quartz的使用">
-<meta name="twitter:description" content="引入依赖 1234567891011121314151617&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;&amp;l">
+<meta name="twitter:title" content="Brigitte">
+<meta name="twitter:description" content="SSM整合拦截器123456789101112131415161718192021public class myInterceptor extends HandlerInterceptorAdapter &amp;#123;    Logger logger=Logger.getLogger(myInterceptor.class);    @Override    public boolean preH">
 
 
 
@@ -121,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="http://www.tangkungblog.cn/2019/07/25/定时任务（二）Quartz的使用/">
+  <link rel="canonical" href="http://www.tangkungblog.cn/2020/04/14/整合ssm中拦截器/">
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>定时任务（二）springboot整合Quartz的使用 | Brigitte</title>
+  <title> | Brigitte</title>
   
 
 
@@ -369,7 +369,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.tangkungblog.cn/2019/07/25/定时任务（二）Quartz的使用/">
+    <link itemprop="mainEntityOfPage" href="http://www.tangkungblog.cn/2020/04/14/整合ssm中拦截器/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="唐坤">
@@ -386,7 +386,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">定时任务（二）springboot整合Quartz的使用
+          <h1 class="post-title" itemprop="name headline">
 
               
             
@@ -412,7 +412,7 @@
                 
               
 
-              <time title="创建时间：2019-07-25 15:53:00 / 修改时间：16:30:50" itemprop="dateCreated datePublished" datetime="2019-07-25T15:53:00+08:00">2019-07-25</time>
+              <time title="创建时间：2020-04-14 09:18:23 / 修改时间：09:35:11" itemprop="dateCreated datePublished" datetime="2020-04-14T09:18:23+08:00">2020-04-14</time>
             
 
             
@@ -435,8 +435,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/07/25/定时任务（二）Quartz的使用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/25/定时任务（二）Quartz的使用/" itemprop="commentCount"></span>
+                <a href="/2020/04/14/整合ssm中拦截器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/04/14/整合ssm中拦截器/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -471,17 +471,10 @@
       
 
       
-        <p> 引入依赖</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.quartz-scheduler&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;quartz&lt;/artifactId&gt;</span><br><span class="line">&lt;version&gt;2.2.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;spring-context-support&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">&lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">&lt;artifactId&gt;spring-tx&lt;/artifactId&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+        <h1 id="SSM整合拦截器"><a href="#SSM整合拦截器" class="headerlink" title="SSM整合拦截器"></a>SSM整合拦截器</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">myInterceptor</span> <span class="keyword">extends</span> <span class="title">HandlerInterceptorAdapter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    Logger logger=Logger.getLogger(myInterceptor.class);</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">preHandle</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Object handler)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        logger.info(<span class="string">"进入了拦截器1"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postHandle</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.postHandle(request, response, handler, modelAndView);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">afterCompletion</span><span class="params">(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        logger.info(<span class="string">"出去拦截器1"</span>);</span><br><span class="line">        <span class="keyword">super</span>.afterCompletion(request, response, handler, ex);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>定义任务类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuartzDemo</span> <span class="keyword">implements</span> <span class="title">Job</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">(JobExecutionContext arg0)</span> <span class="keyword">throws</span> JobExecutionException</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">Syetem.out.println(<span class="string">"Execute...."</span>+<span class="keyword">new</span> Date());</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>测试代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Quartzconfig</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line"><span class="comment">//创建job对象，你要做什么事情</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> JobDetailFactoryBean <span class="title">jobDetailFactoryBean</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        JobDetailFactoryBean factory =<span class="keyword">new</span> JobDetailFactoryBean();</span><br><span class="line">        factory.setjobClass(QuartzDemo.class);</span><br><span class="line">        <span class="keyword">return</span> factory;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建Trigger对象，在什么时间做</span></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span>	SimpleTriggerFactoryBean <span class="title">simpleTriggerFactoryBean</span><span class="params">(JobDetailFactoryBean jobDetailFactoryBean)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        SimpleTriggerFactoryBean factory=<span class="keyword">new</span> SimpleTriggerFactoryBean();</span><br><span class="line">        <span class="comment">//关联JobDetail对象</span></span><br><span class="line">        factory.setJobDetail(jobDetailFactoryBean.getObject());</span><br><span class="line">        <span class="comment">//该参数表示执行的毫秒数</span></span><br><span class="line">        factory.setRepeatInertval(<span class="number">2000</span>);</span><br><span class="line">        <span class="comment">//重复的次数</span></span><br><span class="line">        factory.setRepeatcount(<span class="number">5</span>);</span><br><span class="line">        <span class="keyword">return</span> factory;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> SchedulerFactoryBean <span class="title">schedulerFactoryBean</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        SchedulerFactoryBean factory=<span class="keyword">new</span> SchedulerFactoryBean();</span><br><span class="line">       <span class="comment">//关联factory</span></span><br><span class="line">        </span><br><span class="line">        factory.setTriggers(simpleTriggerFactoryBean.getObject());</span><br><span class="line">        <span class="keyword">return</span> factory;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后再启动类中加入@EnableScheduling</p>
-
+<p>springmvc.xml中配置</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;mvc:interceptors&gt;</span><br><span class="line">    &lt;mvc:interceptor&gt;</span><br><span class="line">        &lt;mvc:mapping path=<span class="string">"/*"</span>/&gt;</span><br><span class="line">        &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.spring.Interceptor.myInterceptor"</span>/&gt;</span><br><span class="line">    &lt;/mvc:interceptor&gt;</span><br><span class="line">&lt;/mvc:interceptors&gt;</span><br><span class="line">&lt;mvc:interceptors&gt;</span><br><span class="line">    &lt;mvc:interceptor&gt;</span><br><span class="line">        &lt;mvc:mapping path=<span class="string">"/*"</span>/&gt;</span><br><span class="line">        &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.spring.Interceptor.OneInterceptor"</span>/&gt;</span><br><span class="line">    &lt;/mvc:interceptor&gt;</span><br><span class="line">&lt;/mvc:interceptors&gt;</span><br><span class="line">&lt;mvc:interceptors&gt;</span><br><span class="line">    &lt;mvc:interceptor&gt;</span><br><span class="line">        &lt;mvc:mapping path=<span class="string">"/*"</span>/&gt;</span><br><span class="line">        &lt;bean <span class="class"><span class="keyword">class</span></span>=<span class="string">"com.spring.Interceptor.twoInterceptor"</span>/&gt;</span><br><span class="line">    &lt;/mvc:interceptor&gt;</span><br><span class="line">&lt;/mvc:interceptors&gt;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -555,8 +548,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/25/springboot定时任务之Scheduled/" rel="next" title="springboot定时任务二种（一）@Scheduled">
-                <i class="fa fa-chevron-left"></i> springboot定时任务二种（一）@Scheduled
+              <a href="/2020/04/14/ssm整合配置文件/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
               </a>
             
           </div>
@@ -565,7 +558,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/04/14/ssm整合配置文件/" rel="prev" title>
+              <a href="/2020/04/14/整合ssm中aop/" rel="prev" title>
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -615,8 +608,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -679,6 +681,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSM整合拦截器"><span class="nav-number">1.</span> <span class="nav-text">SSM整合拦截器</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1373847758&auto=1&height=66">
